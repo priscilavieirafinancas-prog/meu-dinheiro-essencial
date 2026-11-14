@@ -199,7 +199,7 @@ const _e=extra;extra=function(){_e();const h=document.querySelector('main header
   const br=$('#br');if(br)br.onchange=e=>{restoreFile(e.target.files[0]);e.target.value=''};const be=$('#be');if(be)be.onclick=fazerBackup}};
 
 /* ===== v1.3: sincronização Google Drive + PWA ===== */
-const GCLIENT='';/* ID do cliente OAuth (público, não é segredo). Preencha ao publicar — veja LEIAME. */
+const GCLIENT='565771995676-ut6fs30aopp4f41grf5o3pb0ji1fsth1.apps.googleusercontent.com';
 const GSCOPE='https://www.googleapis.com/auth/drive.appdata',FN='meu-dinheiro.json',VP='meu-dinheiro-v-';
 const sy={tok:null,exp:0,st:GCLIENT?'desconectado':'naoconfig',msg:'',busy:0,again:0,t:null,fetch:(...a)=>fetch(...a)};
 const hs=s=>{let h=5381;for(const c of s)h=((h<<5)+h+c.charCodeAt(0))|0;return (h>>>0).toString(36)};
